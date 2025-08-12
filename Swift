@@ -1,0 +1,14 @@
+import UIKit
+
+class ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Display "Hello, iOS!" on screen
+        let label = UILabel()
+        label.text = "Hello, iOS!"
+        label.textAlignment = .center
+        label.frame = CGRect(x: 0, y: 0, width: 300, height: 50)
+        label.center = self.view.center
+        self.view.addSubview(label)
+    }
+}
